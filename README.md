@@ -30,7 +30,7 @@ Episodes terminate when an absorbing state is reached.
 
 ## List of environments:
 
-Genome size | Number of reads | Read length | Env. name (v1) | Env. name (v1)
+Genome size | Number of reads | Read length | Env. name (v1) | Env. name (v2)
 ------------ | ------------- | ------------- | ------------- | -------------
 25 | 10 | 8 | GymnomeAssembly_25_10_8-v1 | GymnomeAssembly_25_10_8-v2
 25 | 10 | 10 | GymnomeAssembly_25_10_10-v1 | GymnomeAssembly_25_10_10-v2
