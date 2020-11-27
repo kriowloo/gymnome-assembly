@@ -22,7 +22,7 @@ class BaseEnv(Env):
         return self.cur_state
 
     def _is_terminal(self, obs):
-        control = np.zeros(self.n_reads)
+        control = np.zeros(self.n_reads, dtype=np.int32)
         for read_id in obs:
             control[read_id] = 1
         return np.count_nonzero(control) == self.n_reads
@@ -37,7 +37,7 @@ class BaseEnv(Env):
         pass
 
     def step(self, action):
-        _next = np.zeros(self.n_reads) - 1
+        _next = np.zeros(self.n_reads, dtype=np.int32) - 1
         for i in range(self._cur_pos):
             _next[i] = self.cur_state[i]
         # set current action into next state
