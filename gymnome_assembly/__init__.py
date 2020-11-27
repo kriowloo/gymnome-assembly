@@ -2,185 +2,185 @@ from gym.envs.registration import register
 
 register(
     id='GymnomeAssembly_25_10_8-v1',
-    entry_point='gymnome_assembly.envs:Dataset01v1',
+    entry_point='gymnome_assembly.envs:Dataset01V1',
 )
 register(
     id='GymnomeAssembly_25_10_10-v1',
-    entry_point='gymnome_assembly.envs:Dataset02v1',
+    entry_point='gymnome_assembly.envs:Dataset02V1',
 )
 register(
     id='GymnomeAssembly_25_10_15-v1',
-    entry_point='gymnome_assembly.envs:Dataset03v1',
+    entry_point='gymnome_assembly.envs:Dataset03V1',
 )
 register(
     id='GymnomeAssembly_50_10_8-v1',
-    entry_point='gymnome_assembly.envs:Dataset04v1',
+    entry_point='gymnome_assembly.envs:Dataset04V1',
 )
 register(
     id='GymnomeAssembly_50_10_10-v1',
-    entry_point='gymnome_assembly.envs:Dataset05v1',
+    entry_point='gymnome_assembly.envs:Dataset05V1',
 )
 register(
     id='GymnomeAssembly_50_10_15-v1',
-    entry_point='gymnome_assembly.envs:Dataset06v1',
+    entry_point='gymnome_assembly.envs:Dataset06V1',
 )
 register(
     id='GymnomeAssembly_25_20_8-v1',
-    entry_point='gymnome_assembly.envs:Dataset07v1',
+    entry_point='gymnome_assembly.envs:Dataset07V1',
 )
 register(
     id='GymnomeAssembly_25_20_10-v1',
-    entry_point='gymnome_assembly.envs:Dataset08v1',
+    entry_point='gymnome_assembly.envs:Dataset08V1',
 )
 register(
     id='GymnomeAssembly_25_20_15-v1',
-    entry_point='gymnome_assembly.envs:Dataset09v1',
+    entry_point='gymnome_assembly.envs:Dataset09V1',
 )
 register(
     id='GymnomeAssembly_50_20_8-v1',
-    entry_point='gymnome_assembly.envs:Dataset10v1',
+    entry_point='gymnome_assembly.envs:Dataset10V1',
 )
 register(
     id='GymnomeAssembly_50_20_10-v1',
-    entry_point='gymnome_assembly.envs:Dataset11v1',
+    entry_point='gymnome_assembly.envs:Dataset11V1',
 )
 register(
     id='GymnomeAssembly_50_20_15-v1',
-    entry_point='gymnome_assembly.envs:Dataset12v1',
+    entry_point='gymnome_assembly.envs:Dataset12V1',
 )
 register(
     id='GymnomeAssembly_25_30_8-v1',
-    entry_point='gymnome_assembly.envs:Dataset13v1',
+    entry_point='gymnome_assembly.envs:Dataset13V1',
 )
 register(
     id='GymnomeAssembly_25_30_10-v1',
-    entry_point='gymnome_assembly.envs:Dataset14v1',
+    entry_point='gymnome_assembly.envs:Dataset14V1',
 )
 register(
     id='GymnomeAssembly_25_30_15-v1',
-    entry_point='gymnome_assembly.envs:Dataset15v1',
+    entry_point='gymnome_assembly.envs:Dataset15V1',
 )
 register(
     id='GymnomeAssembly_50_30_8-v1',
-    entry_point='gymnome_assembly.envs:Dataset16v1',
+    entry_point='gymnome_assembly.envs:Dataset16V1',
 )
 register(
     id='GymnomeAssembly_50_30_10-v1',
-    entry_point='gymnome_assembly.envs:Dataset17v1',
+    entry_point='gymnome_assembly.envs:Dataset17V1',
 )
 register(
     id='GymnomeAssembly_50_30_15-v1',
-    entry_point='gymnome_assembly.envs:Dataset18v1',
+    entry_point='gymnome_assembly.envs:Dataset18V1',
 )
 register(
     id='GymnomeAssembly_381_20_75-v1',
-    entry_point='gymnome_assembly.envs:Dataset19v1',
+    entry_point='gymnome_assembly.envs:Dataset19V1',
 )
 register(
     id='GymnomeAssembly_567_30_75-v1',
-    entry_point='gymnome_assembly.envs:Dataset20v1',
+    entry_point='gymnome_assembly.envs:Dataset20V1',
 )
 register(
     id='GymnomeAssembly_726_40_75-v1',
-    entry_point='gymnome_assembly.envs:Dataset21v1',
+    entry_point='gymnome_assembly.envs:Dataset21V1',
 )
 register(
     id='GymnomeAssembly_930_50_75-v1',
-    entry_point='gymnome_assembly.envs:Dataset22v1',
+    entry_point='gymnome_assembly.envs:Dataset22V1',
 )
 register(
     id='GymnomeAssembly_4224_230_75-v1',
-    entry_point='gymnome_assembly.envs:Dataset23v1',
+    entry_point='gymnome_assembly.envs:Dataset23V1',
 )
 register(
     id='GymnomeAssembly_25_10_8-v2',
-    entry_point='gymnome_assembly.envs:Dataset01v2',
+    entry_point='gymnome_assembly.envs:Dataset01V2',
 )
 register(
     id='GymnomeAssembly_25_10_10-v2',
-    entry_point='gymnome_assembly.envs:Dataset02v2',
+    entry_point='gymnome_assembly.envs:Dataset02V2',
 )
 register(
     id='GymnomeAssembly_25_10_15-v2',
-    entry_point='gymnome_assembly.envs:Dataset03v2',
+    entry_point='gymnome_assembly.envs:Dataset03V2',
 )
 register(
     id='GymnomeAssembly_50_10_8-v2',
-    entry_point='gymnome_assembly.envs:Dataset04v2',
+    entry_point='gymnome_assembly.envs:Dataset04V2',
 )
 register(
     id='GymnomeAssembly_50_10_10-v2',
-    entry_point='gymnome_assembly.envs:Dataset05v2',
+    entry_point='gymnome_assembly.envs:Dataset05V2',
 )
 register(
     id='GymnomeAssembly_50_10_15-v2',
-    entry_point='gymnome_assembly.envs:Dataset06v2',
+    entry_point='gymnome_assembly.envs:Dataset06V2',
 )
 register(
     id='GymnomeAssembly_25_20_8-v2',
-    entry_point='gymnome_assembly.envs:Dataset07v2',
+    entry_point='gymnome_assembly.envs:Dataset07V2',
 )
 register(
     id='GymnomeAssembly_25_20_10-v2',
-    entry_point='gymnome_assembly.envs:Dataset08v2',
+    entry_point='gymnome_assembly.envs:Dataset08V2',
 )
 register(
     id='GymnomeAssembly_25_20_15-v2',
-    entry_point='gymnome_assembly.envs:Dataset09v2',
+    entry_point='gymnome_assembly.envs:Dataset09V2',
 )
 register(
     id='GymnomeAssembly_50_20_8-v2',
-    entry_point='gymnome_assembly.envs:Dataset10v2',
+    entry_point='gymnome_assembly.envs:Dataset10V2',
 )
 register(
     id='GymnomeAssembly_50_20_10-v2',
-    entry_point='gymnome_assembly.envs:Dataset11v2',
+    entry_point='gymnome_assembly.envs:Dataset11V2',
 )
 register(
     id='GymnomeAssembly_50_20_15-v2',
-    entry_point='gymnome_assembly.envs:Dataset12v2',
+    entry_point='gymnome_assembly.envs:Dataset12V2',
 )
 register(
     id='GymnomeAssembly_25_30_8-v2',
-    entry_point='gymnome_assembly.envs:Dataset13v2',
+    entry_point='gymnome_assembly.envs:Dataset13V2',
 )
 register(
     id='GymnomeAssembly_25_30_10-v2',
-    entry_point='gymnome_assembly.envs:Dataset14v2',
+    entry_point='gymnome_assembly.envs:Dataset14V2',
 )
 register(
     id='GymnomeAssembly_25_30_15-v2',
-    entry_point='gymnome_assembly.envs:Dataset15v2',
+    entry_point='gymnome_assembly.envs:Dataset15V2',
 )
 register(
     id='GymnomeAssembly_50_30_8-v2',
-    entry_point='gymnome_assembly.envs:Dataset16v2',
+    entry_point='gymnome_assembly.envs:Dataset16V2',
 )
 register(
     id='GymnomeAssembly_50_30_10-v2',
-    entry_point='gymnome_assembly.envs:Dataset17v2',
+    entry_point='gymnome_assembly.envs:Dataset17V2',
 )
 register(
     id='GymnomeAssembly_50_30_15-v2',
-    entry_point='gymnome_assembly.envs:Dataset18v2',
+    entry_point='gymnome_assembly.envs:Dataset18V2',
 )
 register(
     id='GymnomeAssembly_381_20_75-v2',
-    entry_point='gymnome_assembly.envs:Dataset19v2',
+    entry_point='gymnome_assembly.envs:Dataset19V2',
 )
 register(
     id='GymnomeAssembly_567_30_75-v2',
-    entry_point='gymnome_assembly.envs:Dataset20v2',
+    entry_point='gymnome_assembly.envs:Dataset20V2',
 )
 register(
     id='GymnomeAssembly_726_40_75-v2',
-    entry_point='gymnome_assembly.envs:Dataset21v2',
+    entry_point='gymnome_assembly.envs:Dataset21V2',
 )
 register(
     id='GymnomeAssembly_930_50_75-v2',
-    entry_point='gymnome_assembly.envs:Dataset22v2',
+    entry_point='gymnome_assembly.envs:Dataset22V2',
 )
 register(
     id='GymnomeAssembly_4224_230_75-v2',
-    entry_point='gymnome_assembly.envs:Dataset23v2',
+    entry_point='gymnome_assembly.envs:Dataset23V2',
 )
