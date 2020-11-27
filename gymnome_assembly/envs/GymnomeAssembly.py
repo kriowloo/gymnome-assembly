@@ -53,6 +53,14 @@ class BaseEnv(Env):
 
     def render(self, mode='human', close=False):
         print(self.cur_state)
+        
+    def getOptimalPermutation(self):
+        indexes = []
+        for i in range(len(self.n_reads)):
+            read = self.reads[i]
+            indexes.append((i, self.microgenome.index(read)))
+        indexes.sort(key = lambda x : x[1])
+        return [x[0] for x in indexes]
 
 class BaseEnvV1(BaseEnv):
     def __init__(self, reads, microgenome):
