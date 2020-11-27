@@ -2,23 +2,23 @@
 
 ## Description:
 
-Each environment describes a set of reads to be assembled by the agent. All these reads were generated using sequencing simulation without sequencing errors and they can be seen through attribute reads of each environment (eg.: env.reads). Similarly, the microgenome used to generated them also can be accessed  through the attribute microgenome of each environment (eg.: env.microgenome). Finally, an optimal permutation of reads can be obtained through the method getOptimalPermutation (eg.: env.getOptimalPermutation()).
+Each environment describes a set of *reads* to be assembled by the agent. All these *reads* were generated using sequencing simulation without sequencing errors and they can be seen through attribute *reads* of each environment (eg.: *env.reads*). Similarly, the microgenome used to generated them also can be accessed through the attribute *microgenome* of each environment (eg.: *env.microgenome*). Finally, an optimal permutation of *reads* can be obtained through the method *getOptimalPermutation* (eg.: *env.getOptimalPermutation()*).
 
 ## Observation:
 
 Type: *Box( number of reads )*
 		
-Each state is an array that represents a permutation of reads. Each array element contains a read index (starting from 0)  or -1 when no read was chosen (eg.: initial state is entirely filled with -1).
+Each state is an array that represents a permutation of *reads*. Each array element contains a *read* index (starting from 0)  or -1 when no *read* was chosen (eg.: initial state is entirely filled with -1).
 
 ## Actions:
 
 Type: *Discrete( number of reads )*
 
-Each action corresponds to a read index (starting from 0).
+Each action corresponds to a *read* index (starting from 0).
 
 ## Reward:
 
-Rewards depends on the version you decide to use.	In version **v1**, reward is 0.1 for every step that leads to a non-terminal state; otherwise it corresponds to an overlap score (calculated by SmithWaterman algorithm). In version **v2**, reward is 0.1 for every step taken from initial state; otherwise it corresponds to a normalized overlap score (from 0 to 1). If the action leads to a terminal state, the reward is added by 1.
+Rewards depends on the version you decide to use. In version **v1**, reward is 0.1 for every step that leads to a non-terminal state; otherwise it corresponds to an overlap score (calculated by SmithWaterman algorithm). In version **v2**, reward is 0.1 for every step taken from initial state; otherwise it corresponds to a normalized overlap score (from 0 to 1). If the action leads to a terminal state, the reward is added by 1.
 
 ## Starting State:
 
@@ -55,3 +55,30 @@ Genome size | Number of reads | Read length | Env. name (v1) | Env. name (v2)
 726 | 40 | 75| GymnomeAssembly_726_40_75-v1 | GymnomeAssembly_726_40_75-v2
 930 | 50 | 75| GymnomeAssembly_930_50_75-v1 | GymnomeAssembly_930_50_75-v2
 4224 | 230 | 75| GymnomeAssembly_4224_230_75-v1 | GymnomeAssembly_4224_230_75-v2
+
+## Get started
+
+### Prepare your environment
+
+For using these environments, you need to install *gym* (see instructions [here](https://gym.openai.com/docs/)) and *gymnome-assembly* by using *pip*, as described below:
+
+```bash
+$ pip install gym
+$ pip install -e git+https://github.com/kriowloo/gymnome-assembly.git#egg=gymnome-assembly
+```
+
+### Try one environment
+
+This example uses the version *v2* of the set of 10 *reads* with 8*bp* originated from a microgenome of 25*bp*. We first *reset* the environment (thus getting initial state) and then we take all actions corresponding to the optimal permutation for this dataset.
+
+```python
+import gym
+
+env = gym.make('gymnome_assembly:GymnomeAssembly_25_10_8-v2')
+optimal = env.getOptimalPermutation()
+state = env.reset()
+for i in optimal:
+    next_state, reward, absorbing, _ = env.step(i)
+    print(state, next_state, reward, absorbing)
+    state = next_state
+```
