@@ -34,5 +34,24 @@ Genome size | Number of reads | Read length | Env. name (v1) | Env. name (v1)
 ------------ | ------------- | ------------- | ------------- | -------------
 25 | 10 | 8 | GymnomeAssembly_25_10_8-v1 | GymnomeAssembly_25_10_8-v2
 25 | 10 | 10 | GymnomeAssembly_25_10_10-v1 | GymnomeAssembly_25_10_10-v2
-
-Content in the first column | Content in the second column
+25 | 10 | 15 | GymnomeAssembly_25_10_15-v1 | GymnomeAssembly_25_10_15-v2
+25 | 20 | 8 | GymnomeAssembly_25_20_8-v1 | GymnomeAssembly_25_20_8-v2
+25 | 20 | 10 | GymnomeAssembly_25_20_10-v1 | GymnomeAssembly_25_20_10-v2
+25 | 20 | 15 | GymnomeAssembly_25_20_15-v1 | GymnomeAssembly_25_20_15-v2
+25 | 30 | 8 | GymnomeAssembly_25_30_8-v1 | GymnomeAssembly_25_30_8-v2
+25 | 30 | 10 | GymnomeAssembly_25_30_10-v1 | GymnomeAssembly_25_30_10-v2
+25 | 30 | 15 | GymnomeAssembly_25_30_15-v1 | GymnomeAssembly_25_30_15-v2
+50 | 10 | 8 | GymnomeAssembly_50_10_8-v1 | GymnomeAssembly_50_10_8-v2
+50 | 10 | 10 | GymnomeAssembly_50_10_10-v1 | GymnomeAssembly_50_10_10-v2
+50 | 10 | 15 | GymnomeAssembly_50_10_15-v1 | GymnomeAssembly_50_10_15-v2
+50 | 20 | 8 | GymnomeAssembly_50_20_8-v1 | GymnomeAssembly_50_20_8-v2
+50 | 20 | 10 | GymnomeAssembly_50_20_10-v1 | GymnomeAssembly_50_20_10-v2
+50 | 20 | 15 | GymnomeAssembly_50_20_15-v1 | GymnomeAssembly_50_20_15-v2
+50 | 30 | 8 | GymnomeAssembly_50_30_8-v1 | GymnomeAssembly_50_30_8-v2
+50 | 30 | 10 | GymnomeAssembly_50_30_10-v1 | GymnomeAssembly_50_30_10-v2
+50 | 30 | 15 | GymnomeAssembly_50_30_15-v1 | GymnomeAssembly_50_30_15-v2
+381 | 20 | 75| GymnomeAssembly_381_20_75-v1 | GymnomeAssembly_381_20_75-v2
+567 | 30 | 75| GymnomeAssembly_567_30_75-v1 | GymnomeAssembly_567_30_75-v2
+726 | 40 | 75| GymnomeAssembly_726_40_75-v1 | GymnomeAssembly_726_40_75-v2
+930 | 50 | 75| GymnomeAssembly_930_50_75-v1 | GymnomeAssembly_930_50_75-v2
+4224 | 230 | 75| GymnomeAssembly_4224_230_75-v1 | GymnomeAssembly_4224_230_75-v2
