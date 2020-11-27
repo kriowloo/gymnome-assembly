@@ -70,6 +70,13 @@ class BaseEnvV1(BaseEnv):
             last = read_id
         return acc
 
+    def _get_cached_overlap(self, read1, read2):
+        if read1 in self.overlap_buffer and read2 in self.overlap_buffer[read1]:
+            return self.overlap_buffer[read1][read2]
+        if read2 in self.overlap_buffer and read1 in self.overlap_buffer[read2]:
+            return self.overlap_buffer[read2][read1]
+        return None
+
     def _get_overlap(self, read1, read2):
         o_val = self._get_cached_overlap(read1, read2)
         if o_val is None:
