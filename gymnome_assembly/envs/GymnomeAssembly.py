@@ -56,7 +56,7 @@ class BaseEnv(Env):
         
     def getOptimalPermutation(self):
         indexes = []
-        for i in range(len(self.n_reads)):
+        for i in range(self.n_reads):
             read = self.reads[i]
             indexes.append((i, self.microgenome.index(read)))
         indexes.sort(key = lambda x : x[1])
