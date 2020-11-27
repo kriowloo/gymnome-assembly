@@ -11,8 +11,8 @@ class BaseEnv(Env):
         self.n_reads = len(self.reads)
         self.action_space = spaces.Discrete(self.n_reads)
         low = np.zeros((self.n_reads,), dtype=np.int32) - 1
-        high = np.zeros((n_reads,), dtype=np.int32)
-        high.fill(n_reads)
+        high = np.zeros((self.n_reads,), dtype=np.int32)
+        high.fill(self.n_reads)
         self.observation_space = spaces.Box(low, high, dtype=np.int32)
         self.reset()
 
