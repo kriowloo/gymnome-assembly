@@ -1,8 +1,8 @@
-from gym import spaces, Env
+from gymnasium import spaces, Env
 import numpy as np
 
 class BaseEnv(Env):
-    metadata = {'render.modes': ['human']}
+    metadata = {'render_modes': ['human']}
 
     def __init__(self, reads, microgenome):
         #super(BaseEnv, self).__init__()
@@ -16,10 +16,13 @@ class BaseEnv(Env):
         self.observation_space = spaces.Box(low, high, dtype=np.int32)
         self.reset()
 
-    def reset(self):
+    def reset(self, seed=None, options=None):
+        if seed is not None:
+            self.seed(seed)
+
         self._cur_pos = 0
         self.cur_state = np.zeros((self.n_reads,), dtype=np.int32) - 1
-        return self.cur_state
+        return self.cur_state, {}
 
     def _is_terminal(self, obs):
         control = np.zeros(self.n_reads, dtype=np.int32)
@@ -36,7 +39,7 @@ class BaseEnv(Env):
     def _compute_reward(self, state, done):
         pass
 
-    def step(self, action):
+    def step(self, action, options=None):
         _next = np.zeros(self.n_reads, dtype=np.int32) - 1
         for i in range(self._cur_pos):
             _next[i] = self.cur_state[i]
@@ -49,7 +52,15 @@ class BaseEnv(Env):
         done = self._is_absorbing(obs)
         reward = self._compute_reward(obs, done)
         info = None
-        return obs, reward, done, info
+
+        truncated = False
+        '''
+        # Truncate the observation if necessary
+        if self._cur_pos > self.max_observation_length:
+            self.cur_state[-1] = TRUNCATION_VALUE  # Substitute with the TRUNCATION_VALUE desired
+            truncated = True
+        '''
+        return obs, reward, done, truncated,{}
 
     def render(self, mode='human', close=False):
         print(self.cur_state)
